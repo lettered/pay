@@ -1,0 +1,38 @@
+{
+    "name": "lettered/pay",
+    "description": "lettered payment package",
+    "keywords": ["alipay", "wechat", "pay"],
+    "type": "library",
+    "support": {
+        "issues": "https://github.com/lettered/pay/issues",
+        "source": "https://github.com/lettered/pay"
+    },
+    "authors": [
+        {
+            "name": "lettered",
+            "email": "me@lettered.cn"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "ext-openssl": "*",
+        "ext-simplexml":"*",
+        "ext-libxml": "*",
+        "ext-json": "*",
+        "ext-bcmath": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lettered\\Pay\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lettered\\Pay\\Tests\\": "tests"
+        }
+    },
+    "license": "MIT"
+}
